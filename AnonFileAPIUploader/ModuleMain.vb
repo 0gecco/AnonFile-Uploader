@@ -26,7 +26,7 @@ Module ModuleMain
                         Console.WriteLine("[ INFO ] Done uploading: {0}", anonFile.Status)
                         Console.WriteLine("[ INFO ] Direct download link/URL: {0}", anonFileWrapper.GetDirectDownloadLinkFromLink(anonFile.FullUrl))
 
-                        Console.WriteLine("[ INFO ] Press ENTER key to copy the normal download URL or press the SPACEBAR to copy the direct download URL." & vbCrLf & "[ WARN ] Application will exit after this task.")
+                        Console.WriteLine("[ INFO ] Press ENTER to copy the normal download URL or press the SPACEBAR to copy the direct download URL." & vbCrLf & "[ WARN ] Application will exit after this task.")
                         Dim readKey2 As ConsoleKey = Console.ReadKey().Key
                         If readKey2 = ConsoleKey.Enter Then
                             My.Computer.Clipboard.SetText(anonFile.FullUrl)
