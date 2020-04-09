@@ -8,7 +8,7 @@ Module ModuleMain
             Console.Title = "VB.NET AnonFile Uploader [© Gecco 2020] v1.0.11.1"
             Console.ForegroundColor = ConsoleColor.Red
             Console.Clear()
-            Console.WriteLine("[ WARN ] Are you sure you want to upload the selected file? Y/N." & vbCrLf & "[ INFO ] Selected file, " & targetFile)
+            Console.WriteLine("[ WARN ] Are you sure you want to upload the selected file? Y or N." & vbCrLf & "[ INFO ] Selected file, " & targetFile)
             Dim readKey1 As ConsoleKey = Console.ReadKey().Key
             If readKey1 = ConsoleKey.N Then
                 Environment.Exit(0)
