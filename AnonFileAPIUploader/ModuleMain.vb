@@ -14,7 +14,7 @@ Module ModuleMain
                 Environment.Exit(0)
             ElseIf readKey1 = ConsoleKey.Y Then
                 Console.ForegroundColor = ConsoleColor.Green
-                Console.WriteLine(Environment.NewLine)
+                Console.WriteLine(vbCrLf)
                 Using anonFileWrapper As AnonFileWrapper = New AnonFileWrapper()
                     Dim anonFile As AnonFile = anonFileWrapper.UploadFile($"" & targetFile)
                     If anonFile.ErrorMessage IsNot Nothing Then
